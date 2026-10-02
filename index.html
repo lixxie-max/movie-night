@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Movie Night 🎀</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <!-- TOP DECORATION -->
+    <div class="top-decoration">
+        ✦ ⋆｡°✩ 🎀 ✩°｡⋆ ✦
+    </div>
+
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="logo">
+            movie
+            <br>
+            <span>night</span>
+        </div>
+
+        <p class="tagline">
+            little movies for little moments ♡
+        </p>
+
+        <div class="header-buttons">
+            <button id="darkModeBtn">☾</button>
+            <button id="watchlistBtn">♡ Watchlist</button>
+        </div>
+
+    </header>
+
+
+    <!-- INTRODUCTION -->
+    <section class="intro">
+
+        <div class="intro-text">
+
+            <p class="tiny-title">
+                WELCOME TO MY
+            </p>
+
+            <h1>
+                movie<br>
+                corner ♡
+            </h1>
+
+            <p>
+                A tiny collection of movies that make
+                me laugh, cry, stare at the ceiling
+                and question my life choices.
+            </p>
+
+            <div class="sticker">
+                currently watching ✿
+            </div>
+
+        </div>
+
+
+        <div class="intro-decoration">
+            🎬
+
+            <br>
+
+            <span>
+                popcorn & feelings
+            </span>
+        </div>
+
+    </section>
+
+
+    <!-- SEARCH AND FILTERS -->
+    <section class="controls">
+
+        <div class="search-box">
+
+            <span>🔍</span>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="search for a movie..."
+            >
+
+        </div>
+
+
+        <select id="genreFilter">
+
+            <option value="all">
+                all genres
+            </option>
+
+            <option value="romance">
+                romance
+            </option>
+
+            <option value="drama">
+                drama
+            </option>
+
+            <option value="sci-fi">
+                sci-fi
+            </option>
+
+        </select>
+
+
+        <select id="sortMovies">
+
+            <option value="default">
+                sort by
+            </option>
+
+            <option value="rating">
+                highest rating
+            </option>
+
+        </select>
+
+    </section>
+
+
+    <!-- MOVIE SECTION -->
+    <main>
+
+        <div class="section-heading">
+
+            <div>
+
+                <span>✿</span>
+
+                <h2>
+                    my movie shelf
+                </h2>
+
+            </div>
+
+            <p>
+                5 films • endless feelings
+            </p>
+
+        </div>
+
+
+        <!-- JavaScript will put movies here -->
+
+        <div
+            id="movieContainer"
+            class="movie-container"
+        >
+
+        </div>
+
+    </main>
+
+
+    <!-- MOVIE POPUP -->
+
+    <div
+        id="movieModal"
+        class="modal"
+    >
+
+        <div class="modal-content">
+
+            <button
+                id="closeModal"
+                class="close-btn"
+            >
+                ×
+            </button>
+
+
+            <img
+                id="modalPoster"
+                src=""
+                alt="Movie poster"
+            >
+
+
+            <div class="modal-info">
+
+                <p
+                    id="modalGenre"
+                    class="modal-genre"
+                ></p>
+
+
+                <h2 id="modalTitle"></h2>
+
+
+                <p id="modalRating"></p>
+
+
+                <p id="modalDescription"></p>
+
+
+                <button
+                    id="modalWatchlist"
+                    class="watchlist-button"
+                >
+                    ♡ Add to Watchlist
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            made with ♡, popcorn & too many movies
+        </p>
+
+        <span>
+            ✦ ⋆｡°✩ 🎀 ✩°｡⋆ ✦
+        </span>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
